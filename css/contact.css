@@ -1,0 +1,29 @@
+h5 {
+    color: gray;
+}
+
+form {
+    color: gray;
+    font-size: 1.25rem;
+}
+
+a {
+    color: #1382b9;
+}
+
+.fa-facebook-square {
+    color: #4267b2;
+}
+
+.fa-twitter {
+    color: rgba(29, 161, 242, 1.00);
+}
+
+.fa-linkedin {
+    color: rgb(0, 115, 176);
+}
+
+.btn-primary {
+    background-color: #1382b9;
+    border-color: #1382b9;
+}
