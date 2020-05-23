@@ -5,6 +5,7 @@
  */
 body {
   padding-top: 56px;
+  background-color: #d7eff8;;
 }
 
 .carousel-item {
@@ -20,3 +21,13 @@ body {
 .portfolio-item {
   margin-bottom: 30px;
 }
+
+.navbar-custom { 
+   background-color:  #21409a;
+} 
+
+.navbar-custom .navbar-brand, 
+.navbar-custom .nav-link,
+.navbar-custom .navbar-text { 
+    color: #d7eff8; 
+} 
