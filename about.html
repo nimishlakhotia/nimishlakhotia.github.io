@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Modern Business - Start Bootstrap Template</title>
+  <title>NGO WeListen: About Us</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -17,13 +17,188 @@
   <link href="css/modern-business.css" rel="stylesheet">
 
 </head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script>
+        import AOS from 'aos';
+        import 'aos/dist/aos.css';
+    
+            AOS.init();
+    </script>
+<style>
+  .ia-container {
+  width: 685px;
+  margin: 20px auto;
+  overflow: hidden;
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.08);
+  border: 7px solid rgba(255,255,255,0.6);
+}
+.ia-container figure {
+    position: absolute;
+  top: 0;
+  left: 50px; /* width of visible piece */
+  width: 335px;
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.6);
+    transition: all 0.3s ease-in-out;
+}
+.ia-container > figure {
+    position: relative;
+  left: 0 !important;
+}
+.ia-container img {
+  display: block;
+  width: 100%;
+}
 
+.ia-container input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px; /* just cover visible part */
+  height: 100%;
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+    opacity: 0;
+  z-index: 100;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.ia-container input:checked{
+  width: 5px;
+  left: auto;
+  right: 0px;
+}
+.ia-container input:checked ~ figure {
+    left: 335px;
+    transition: all 0.7s ease-in-out;
+}
+
+.ia-container figcaption {
+  width: 100%;
+  height: 100%;
+  background: rgba(87, 73, 81, 0.1);
+  position: absolute;
+  top: 0px;
+    transition: all 0.2s linear;
+}
+
+.ia-container figcaption span {
+  position: absolute;
+  top: 40%;
+  margin-top: -30px;
+  right: 20px;
+  left: 20px;
+  overflow: hidden;
+  text-align: center;
+  background: rgba(87, 73, 81, 0.3);
+  line-height: 20px;
+  font-size: 18px;
+    opacity: 0;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 700;
+  padding: 20px;
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+} 
+.ia-container input:checked + figcaption,
+.ia-container input:checked:hover + figcaption{
+  background: rgba(87, 73, 81, 0);
+}
+.ia-container input:checked + figcaption span {
+    transition: all 0.4s ease-in-out 0.5s;
+  opacity: 1;
+  top: 50%;
+}
+.ia-container #ia-selector-last:checked + figcaption span {
+  transition-delay: 0.3s;
+}
+.ia-container input:hover + figcaption {
+  background: rgba(87, 73, 81, 0.03);
+}
+
+.ia-container input:checked ~ figure input{
+    z-index: 1;
+}
+@media screen and (max-width: 720px) {
+    .ia-container { 
+    width: 540px; 
+  }
+  
+  .ia-container figure { 
+    left: 40px; 
+    width: 260px; 
+  }
+  
+  .ia-container input { 
+    width: 40px; 
+  }
+  
+  .ia-container input:checked ~ figure { 
+    left: 260px; 
+  }
+  
+  .ia-container figcaption span { 
+    font-size: 16px; 
+  }
+}
+
+@media screen and (max-width: 520px) {
+    .ia-container { 
+    width: 320px; 
+  }
+  
+  .ia-container figure { 
+    left: 20px; 
+    width: 180px; 
+  }
+  
+  .ia-container input { 
+    width: 20px; 
+  }
+  
+  .ia-container input:checked ~ figure { 
+    left: 180px; 
+  }
+  
+  .ia-container figcaption span { 
+    font-size: 12px; 
+    letter-spacing: 2px; 
+    padding: 10px; 
+    margin-top: -20px; 
+  } 
+
+}
+.data{
+    width:100vw;
+    position: relative;
+    text-align:center;
+
+}
+.col-sm-3{
+    color:black;
+    background-image: url('images/1.jpg');
+    width:24vw;
+    height:13vh;
+    padding:0 -3.5vw 0 0;
+    float:left;
+    font-family: "Nunito", Arial, sans-serif;
+    margin: 4vh 0;
+    font-size: 2vh;
+}
+
+  </style>
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-blue bg-blue fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Start Bootstrap</a>
+      <a class="navbar-brand" href="index.html">WeListen</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -78,12 +253,13 @@
   </nav>
 
   <!-- Page Content -->
-  <div class="container">
+  <div style="height: 2rem;width:100vw;"></div>
+  <div  class="container">
 
     <!-- Page Heading/Breadcrumbs -->
-    <h1 class="mt-4 mb-3">About
+    <!-- <h1 class="mt-4 mb-3">About
       <small>Subheading</small>
-    </h1>
+    </h1> -->
 
     <ol class="breadcrumb">
       <li class="breadcrumb-item">
@@ -94,15 +270,87 @@
 
     <!-- Intro Content -->
     <div class="row">
-      <div class="col-lg-6">
-        <img class="img-fluid rounded mb-4" src="http://placehold.it/750x450" alt="">
+      <div class="col-lg-12">
+                          <div class="ia-container">
+                          
+                    <figure>
+                      <img src="images/1.jpg" alt="image01" />
+                      <input type="radio" name="radio-set" checked="checked" />
+                      <!-- <figcaption><span>True Colors</span></figcaption> -->
+                      
+                      <figure>
+                        <img src="images/2.jpg" alt="image02" />
+                        <input type="radio" name="radio-set" />
+                        <!-- <figcaption><span>Honest Light</span></figcaption> -->
+                        
+                        <figure>
+                          <img src="images/1.jpg" alt="image02" />
+                        <input type="radio" name="radio-set" />
+                        <!-- <figcaption><span>Honest Light</span></figcaption> -->
+                          <figure>
+                            <img src="images/2.jpg" alt="image02" />
+                        <input type="radio" name="radio-set" />
+                        <!-- <figcaption><span>Honest Light</span></figcaption> -->
+                            
+                            
+                          </figure>
+                            
+                        </figure>
+                        
+                      </figure>
+                      
+                    </figure>
+                    
+                  </div>
       </div>
-      <div class="col-lg-6">
-        <h2>About Modern Business</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed voluptate nihil eum consectetur similique? Consectetur, quod, incidunt, harum nisi dolores delectus reprehenderit voluptatem perferendis dicta dolorem non blanditiis ex fugiat.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, magni, aperiam vitae illum voluptatum aut sequi impedit non velit ab ea pariatur sint quidem corporis eveniet. Odit, temporibus reprehenderit dolorum!</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, consequuntur, modi mollitia corporis ipsa voluptate corrupti eum ratione ex ea praesentium quibusdam? Aut, in eum facere corrupti necessitatibus perspiciatis quis?</p>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <h2 data-aos="fade-left">About WeListen:</h2>
+        <p data-aos="zoom-in-up">“A report by the World Health Organisation (WHO) revealed that 7.5 % of the Indian population suffers from some form of mental disorder."
+
+We come across such facts almost every day. And yet, the majority of us are either in denial or hesitant to seek help.
+
+Hence, we take an initiative at We Listen! as an NGO (not registered yet) to not only actively foster awareness about mental health but also work on easy accessibility of therapy procedures to the adolescence in our country. Our aim is to help people who need someone talk to and in the future provide an on-call availability service for anyone to reach out.
+
+Follow us and stay tuned for more details and updates, coming soon. Feel free to contact or reach out to us to become a part of We Listen!
+</p>
       </div>
+      <div class="data ">
+        <div class="row">
+            <div class="col-sm-3"><div style="margin-top:3vh;"><b><span class="counter">170</span>+ <br>Classroom Students</b></div></div>
+            <div class="col-sm-3"><div style="margin-top:3vh;"><b><span class="counter">100</span>+<br> Coaching Students</b></div></div>
+            <div class="col-sm-3"><div style="margin-top:3vh;"><b><span class="counter">95</span>%<br>Student Attendance</b></div></div>
+            <div class="col-sm-3"><div style="margin-top:3vh;"><b><span class="counter">50</span>+<br>Devoted Volunteers</b></div></div>
+        </div>
+         <div class="row">
+      <div class="col-lg-12">
+        <h2 data-aos="fade-left">Our Vision:</h2>
+        <p data-aos="zoom-in-down">“A report by the World Health Organisation (WHO) revealed that 7.5 % of the Indian population suffers from some form of mental disorder."
+
+We come across such facts almost every day. And yet, the majority of us are either in denial or hesitant to seek help.
+
+Hence, we take an initiative at We Listen! as an NGO (not registered yet) to not only actively foster awareness about mental health but also work on easy accessibility of therapy procedures to the adolescence in our country. Our aim is to help people who need someone talk to and in the future provide an on-call availability service for anyone to reach out.
+
+Follow us and stay tuned for more details and updates, coming soon. Feel free to contact or reach out to us to become a part of We Listen!
+</p>
+      </div>
+</div>
+ <script src="jquery.counterup.min.js"></script>
+  <script src="waypoint.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+  <script>
+          jQuery(document).ready(function( )
+          {
+              $('.counter').counterUp({
+                delay: 10,
+                time: 2000,
+          });
+          });
+          
+          
+          
+   </script>
     </div>
     <!-- /.row -->
 
@@ -188,9 +436,14 @@
   </footer>
 
   <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
+  <!-- <script src="vendor/jquery/jquery.min.js"></script> -->
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
