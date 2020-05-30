@@ -1,4 +1,4 @@
-.ia-container {
+/*.ia-container {
     width: 685px;
     margin: 20px auto;
     overflow: hidden;
@@ -11,7 +11,7 @@
     position: absolute;
     top: 0;
     left: 50px;
-    /* width of visible piece */
+     width of visible piece 
     width: 335px;
     box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.6);
     transition: all 0.3s ease-in-out;
@@ -32,7 +32,6 @@
     top: 0;
     left: 0;
     width: 50px;
-    /* just cover visible part */
     height: 100%;
     cursor: pointer;
     border: 0;
@@ -164,22 +163,22 @@
     margin: 4vh 0;
     font-size: 2.5vh;
 }
-
-h2 {
+*/
+/*h2 {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: bolder;
 }
-
+*/
 .mission {
     text-align: center;
 }
 
-.text {
-    font-size: 1.5rem;
-    line-height: 1.5;
+/*.text {
+    font-size: 1rem;
+    line-height: 1;
 }
-
+*/
 .value {
     font-weight: bolder;
 }

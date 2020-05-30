@@ -28,6 +28,9 @@ body {
 
 .navbar-custom .navbar-brand, 
 .navbar-custom .nav-link,
-.navbar-custom .navbar-text { 
-    color: #d7eff8; 
+.navbar-custom .navbar-text,
+.navbar-custom .navbar-toggler-right,
+.navbar-custom .navbar-toggler-icon { 
+    color: #d7eff8;
+
 } 
