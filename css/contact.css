@@ -8,7 +8,13 @@ form {
 }
 
 a {
-    color: #1382b9;
+    /* color: #1382b9; */
+    color: white;
+}
+
+a:hover,
+a:active {
+    text-decoration: none;
 }
 
 .fa-facebook-square {
@@ -59,9 +65,6 @@ a {
     /*max-width: 60%; */
 }
 
-
-
-
 .social-btn span {
     width: 0px;
     overflow: hidden;
@@ -91,9 +94,9 @@ a {
     font-size: 1.5em;
 }
 
-.contact{
+.contact {
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(/images/vision.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/images/vision.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -101,10 +104,9 @@ a {
     color: white;
     background-attachment: fixed;
     text-align: center;
-
 }
 
-.contact-text{
+.contact-text {
     padding-top: 30vh;
     width: 70%;
     margin-right: auto;
@@ -138,7 +140,6 @@ a {
     transition-delay: 0.1s;
 }
 
-
 .button__text {
     /*font-size: 16px;*/
     font-size: 1rem;
@@ -147,7 +148,8 @@ a {
     z-index: 10;
 }
 
-.button__text--delay, .button__background{
+.button__text--delay,
+.button__background {
     transform-style: preserve-3d;
 }
 
@@ -161,7 +163,7 @@ a {
     right: auto;
     bottom: 0;
     left: -100%;
-    transition: left .3s 0s cubic-bezier(.72,.065,.275,.885);
+    transition: left .3s 0s cubic-bezier(.72, .065, .275, .885);
     background-color: #fff;
     width: 100%;
 }
