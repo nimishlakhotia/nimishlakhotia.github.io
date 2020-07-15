@@ -52,7 +52,8 @@ h1,h2:not(.header h1){
 
 .header{
 	height: 100vh;
-	background-image: url(/images/header.gif);
+	/*background-image: url(/images/header.gif);*/
+	background-image: url(https://media.giphy.com/media/1SsAPvbzwDMtyhYqa1/giphy.gif);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -63,7 +64,7 @@ h1,h2:not(.header h1){
 
 .header h1{
 	padding: 0;
-	color: white;
+	color: black;
 	padding-top: 8rem;
 }
 

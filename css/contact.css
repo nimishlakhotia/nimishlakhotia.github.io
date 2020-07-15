@@ -72,6 +72,7 @@ a {
 .social-btn:hover {
     width: 150px;
     border-radius: 5px;
+    text-decoration: none;
 }
 
 .social-btn:hover span {
@@ -168,4 +169,5 @@ a {
 
 .button--white:hover {
     color: #000;
+    text-decoration: none;
 }
