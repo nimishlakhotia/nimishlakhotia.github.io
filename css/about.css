@@ -1,3 +1,78 @@
+html{
+    margin:0;
+    padding: 0;
+}
+
+:root{
+    /*--weblue: #21409a;*/
+    --weblue:#0D2C54;
+    --wegreen:#7CEA9C;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--wegreen);
+}
+
+.navbar-custom {
+    background-color: var(--weblue);
+}
+
+.nav-link.active{
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+}
+
+.nav-link:not(.active){
+    text-transform: lowercase;
+    text-decoration: line-through;
+}
+
+.nav-link:not(.active):hover{
+    text-transform: lowercase;
+    text-decoration: none;
+}
+
+.about-us{
+    height: 70vh;
+    background-image:linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url(/images/upcoming.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+h1,h2,h3{
+    font-weight: 600;
+}
+
+.breadcrumb{
+    background-color: var(--wegreen);
+    font-weight: 600;
+}
+
+.breadcrumb a{
+    color: var(--weblue);
+    text-decoration: none;
+}
+
+.container .value{
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: .2rem;
+    color: var(--weblue);
+    text-align: justify;
+}
+
+footer a{
+    color: var(--wegreen);
+}
+
+footer a:hover{
+    color: yellow;
+}
+
 /*.ia-container {
     width: 685px;
     margin: 20px auto;
@@ -171,7 +246,7 @@
 }
 */
 .mission {
-    text-align: center;
+    text-align: justify;
 }
 
 /*.text {
@@ -181,4 +256,12 @@
 */
 .value {
     font-weight: bolder;
+}
+
+footer a{
+    color: var(--wegreen);
+}
+
+footer a:hover{
+    color: yellow;
 }

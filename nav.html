@@ -1,19 +1,22 @@
 <nav class="navbar fixed-top navbar-expand-lg navbar-custom fixed-top navbar-fixed-top navbar-dark">
     <div class="container">
-      <a class="navbar-brand" href="index.html"><img src="/images/logo.png" style="height: 2rem; width: auto;"></a>
+      <a class="navbar-brand" href="index.html"><img src="/images/logo.svg" style="height: 3.2rem; width: auto;"></a>
       <button class="navbar-custom navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-custom navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link home" id="home" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="team.html">Team</a>
+            <a class="nav-link" id="about" href="about.html">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link" id="team" href="team.html">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="contact" href="contact.html">Contact</a>
           </li>
           <!-- <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -53,3 +56,24 @@
       </div>
     </div>
   </nav>
+
+  <script type="text/javascript">
+    if(location.pathname.substring(1)=="index.html" || location.pathname=="/"){
+      let activecls = document.getElementById("home");
+      activecls.classList.add("active"); 
+    }
+
+    if(location.pathname.substring(1)=="about.html"){
+      let activecls = document.getElementById("about");
+      activecls.classList.add("active"); 
+    }
+
+    if(location.pathname.substring(1)=="team.html"){
+      let activecls = document.getElementById("team");
+      activecls.classList.add("active"); 
+    }
+    if(location.pathname.substring(1)=="contact.html"){
+      let activecls = document.getElementById("contact");
+      activecls.classList.add("active"); 
+    }
+  </script>
