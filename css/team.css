@@ -16,7 +16,8 @@ body {
   font-family: 'Poppins', sans-serif;
   background-color: var(--wegreen);
   /*height: 100vh;*/
-  background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(/images/upcoming.jpg);
+  /*background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(/images/upcoming.jpg);*/
+  background-image: linear-gradient(rgba(6, 30, 73, 1), rgba(6, 30, 73, 1));
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -37,6 +38,7 @@ body {
     padding-top: 2rem;
     padding-bottom: 2rem;
     font-weight: 600;
+    color: var(--weblue);
 }
 
 /* ---- grid ---- */
@@ -115,10 +117,11 @@ body {
 }
 
 .name{
-  text-shadow: 4px 4px 8px white;
+  /*text-shadow: 4px 4px 8px white;*/
+  text-shadow: 2px 2px 4px black;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: .15rem;
+  letter-spacing: .12rem;
 }
 
 .partners-section{
@@ -139,7 +142,7 @@ body {
 br {
   display: block; /* makes it have a width */
   content: ""; /* clears default height */
-  margin: -0.275vw; /* change this to whatever height you want it */
+  margin: 0vw; /* change this to whatever height you want it */
 }
  
 a{
