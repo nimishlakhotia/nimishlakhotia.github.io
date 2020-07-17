@@ -35,12 +35,16 @@ body {
 }
 
 .about-us{
-    height: 70vh;
+    height: 50vh;
     background-image:linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url(/images/upcoming.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+}
+
+.about-us h1{
+    text-transform: lowercase;
 }
 
 h1,h2,h3{
