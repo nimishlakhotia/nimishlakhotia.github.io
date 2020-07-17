@@ -1,17 +1,17 @@
 console.clear()
 // console.log('lsakdfalskjdflnksd')
 
-const config = {
+/*const config = {
   src: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/open-peeps-sheet.png',
   rows: 15,
   cols: 7
-}
+}*/
 
 // UTILS
 
-const randomRange = (min, max) => min + Math.random() * (max - min)
+/*const randomRange = (min, max) => min + Math.random() * (max - min)
 
-const randomIndex = (array) => randomRange(0, array.length) | 0
+conrenderst randomIndex = (array) => randomRange(0, array.length) | 0
 
 const removeFromArray = (array, i) => array.splice(i, 1)[0]
 
@@ -21,11 +21,11 @@ const removeRandomFromArray = (array) => removeFromArray(array, randomIndex(arra
 
 const getRandomFromArray = (array) => (
   array[randomIndex(array) | 0]
-)
+)*/
 
 // TWEEN FACTORIES
 
-const resetPeep = ({ stage, peep }) => {
+/*const resetPeep = ({ stage, peep }) => {
   const direction = Math.random() > 0.5 ? 1 : -1
   // using an ease function to skew random to lower values to help hide that peeps have no legs
   const offsetY = 100 - 250 * gsap.parseEase('power2.in')(Math.random())
@@ -84,10 +84,10 @@ const normalWalk = ({ peep, props }) => {
 const walks = [
   normalWalk,
 ]
-
+*/
 // CLASSES
 
-class Peep {
+/*class Peep {
   constructor({
     image,
     rect,
@@ -123,10 +123,10 @@ class Peep {
     ctx.restore()
   }
 }
-
+*/
 // MAIN
 
-const img = document.createElement('img')
+/*const img = document.createElement('img')
 img.onload = init
 img.src = config.src
 
@@ -239,7 +239,7 @@ function render () {
   
   ctx.restore()
 }
-
+*/
 var TxtType = function(el, toRotate, period) {
         this.toRotate = toRotate;
         this.el = el;
