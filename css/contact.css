@@ -177,7 +177,7 @@ a:active {
     bottom: 0;
     left: -100%;
     transition: left .3s 0s cubic-bezier(.72, .065, .275, .885);
-    background-color: #fff;
+    background-color: var(--wegreen); /*#fff;*/
     width: 100%;
 }
 
