@@ -15,24 +15,7 @@ body {
   background-color: var(--wegreen);
 }
 
-.navbar-custom {
-    background-color: var(--weblue);
-}
 
-.nav-link.active{
-    text-transform: uppercase;
-    letter-spacing: .1rem;
-}
-
-.nav-link:not(.active){
-    text-transform: lowercase;
-    text-decoration: line-through;
-}
-
-.nav-link:not(.active):hover{
-    text-transform: lowercase;
-    text-decoration: none;
-}
 
 .about-us{
     height: auto;
