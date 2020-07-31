@@ -1,6 +1,24 @@
 console.clear()
 // console.log('lsakdfalskjdflnksd')
 
+
+
+    $(document).ready(function() {
+     
+      $(".owl-carousel").owlCarousel({
+     
+          autoPlay: 3000, //Set AutoPlay to 3 seconds
+     
+          items : 2,
+          itemsDesktop : [1199,3],
+          itemsDesktopSmall : [979,3]
+     
+      });
+     
+    });
+
+
+
 /*const config = {
   src: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/open-peeps-sheet.png',
   rows: 15,
