@@ -18,6 +18,9 @@
           <li class="nav-item">
             <a class="nav-link" id="contact" href="contact.html">Contact</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" id="campaigns" href="campaigns.html">Campaigns</a>
+          </li>
           <!-- <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Portfolio
@@ -74,6 +77,10 @@
     }
     if(location.pathname.substring(1)=="contact.html"){
       let activecls = document.getElementById("contact");
+      activecls.classList.add("active"); 
+    }
+    if(location.pathname.substring(1)=="campaigns.html"){
+      let activecls = document.getElementById("campaigns");
       activecls.classList.add("active"); 
     }
   </script>
