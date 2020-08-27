@@ -12,7 +12,7 @@ html{
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background-color: var(--wegreen);
+  background-color: white !important;
 }
 
 
@@ -31,7 +31,7 @@ body {
 .about-us h1{
     text-transform: lowercase;
     width: 100%;
-    color: var(--wegreen); /*rgba(6, 30, 73, 1);*/
+    color: white; /*rgba(6, 30, 73, 1);*/
     background-color: rgba(6, 30, 73, 1);
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -64,6 +64,22 @@ h1,h2,h3{
     text-align: justify;
 }
 
+.value {
+    font-weight: bolder;
+}
+
+.values .card{
+    margin-bottom: 1rem;
+}
+
+.card-img-overlay{
+    background: linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0,0.5) );
+}
+
+.values h3{
+    color: white;
+}
+
 footer a{
     color: var(--wegreen);
 }
@@ -84,6 +100,39 @@ footer a:hover{
     color: white;
     background-attachment: fixed;
 }
+
+.team{
+    background-color: var(--wegreen);
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.team .member{
+    color: black;
+    background-color: white;
+    margin-bottom: 10rem;
+}
+
+.member a{
+    color: black;
+    text-decoration: none;
+}
+
+.member h3{
+    color: black;
+}
+
+.member-data{
+}
+
+
+.team img{
+    border-radius: 20rem;
+    height: 10rem;
+    width: auto;
+    transform: translateY(-50%);
+}
+
 /*.ia-container {
     width: 685px;
     margin: 20px auto;
@@ -267,9 +316,6 @@ footer a:hover{
     line-height: 1;
 }
 */
-.value {
-    font-weight: bolder;
-}
 
 footer a{
     color: var(--wegreen);
