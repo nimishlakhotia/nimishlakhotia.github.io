@@ -103,14 +103,17 @@ footer a:hover{
 
 .team{
     background-color: var(--wegreen);
-    margin-left: 5%;
-    margin-right: 5%;
+    width: 100% !important;
 }
 
 .team .member{
     color: black;
     background-color: white;
     margin-bottom: 10rem;
+}
+
+#member1{
+    z-index: 3;
 }
 
 .member a{
