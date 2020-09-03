@@ -43,6 +43,9 @@ h1,h2:not(.header h1){
 	letter-spacing: .15rem;
 }
 
+.card{
+	margin-bottom: 1.5rem;
+}
 
 #canvas {
   width: 100%;
