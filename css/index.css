@@ -153,6 +153,54 @@ h1,h2:not(.header h1){
 	background-origin: center center;
 }
 
+.campaigns .card:hover {
+	/*padding: 3rem 0rem 0rem 3rem;*/
+	background-image: linear-gradient(rgb(255,255,255,0.5),rgb(255,255,255,0.5) ), url('/images/camp2.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-origin: center center;
+	
+	/*-webkit-transform: translateY(0%) translateX(0%);
+          transform: translateY(10%) translateX(10%);*/
+	-webkit-transform: scaleY(100%) scaleX(100%);
+          transform: scaleY(125%) scaleX(125%);
+  	-webkit-transition-delay: .75s;
+          transition-delay: .75s;
+
+	text-decoration:none; 
+ 	background-color: yellow;
+ 	transition: .5s;
+}
+
+.campaigns .card:hover div {
+	/*padding: 3rem 0rem 0rem 3rem;*/
+	background-image: linear-gradient(rgb(255,255,255,0.5),rgb(255,255,255,0.5) ), url('/images/camp2.png');
+}
+
+.campaigns .card:hover div .card-content {
+	/*padding: 3rem 0rem 0rem 3rem;*/
+	text-align: center;
+
+	opacity: 1
+} 
+
+.campaigns .card div .card-content {
+	/*padding: 3rem 0rem 0rem 3rem;*/
+	opacity: 0
+} 
+
+div:hover > .card {
+	padding: 3rem 0rem 0rem 3rem;
+	/*background-image: linear-gradient(rgb(255,255,255,0.5),rgb(255,255,255,0.5) ), url('/images/camp1.png');*/
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-origin: center center;
+	-webkit-transform: scaleX(100%) scaleY(100%);
+          transform: scaleX(80%) scaleY(80%);
+    -webkit-transition-delay: .1s;
+          transition-delay: .1s;
+}
+
 .campaigns h3{
 	font-weight: 600;
 }
