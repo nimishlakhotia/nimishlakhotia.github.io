@@ -2,8 +2,7 @@ console.clear()
 // console.log('lsakdfalskjdflnksd')
 
 
-
-    $(document).ready(function() {
+$(document).ready(function() {
      
       $(".owl-carousel").owlCarousel({
      
@@ -14,8 +13,8 @@ console.clear()
           itemsDesktopSmall : [979,3]
      
       });
-     
-    });
+
+
 
 
 
@@ -313,4 +312,12 @@ window.onload = function() {
     css.type = "text/css";
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
     document.body.appendChild(css);
+
+      let campcard = ddocument.getElementsByClassName("card");
+
+  campcard.addEventListener("mouseover", function( event ) {   
+    campcard.classList.add("hoverCard");
+
+});
+    
 };

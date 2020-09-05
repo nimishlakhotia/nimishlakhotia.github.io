@@ -162,14 +162,13 @@ h1,h2:not(.header h1){
 	
 	/*-webkit-transform: translateY(0%) translateX(0%);
           transform: translateY(10%) translateX(10%);*/
-	-webkit-transform: scaleY(100%) scaleX(100%);
-          transform: scaleY(125%) scaleX(125%);
-  	-webkit-transition-delay: .75s;
-          transition-delay: .75s;
-
-	text-decoration:none; 
+   	text-decoration:none; 
  	background-color: yellow;
- 	transition: .5s;
+ 	transition: .3s;
+
+ 	transform: scale(1.25);
+	z-index: 200;
+	transition-delay: .1s;
 }
 
 .campaigns .card:hover div {
@@ -187,9 +186,14 @@ h1,h2:not(.header h1){
 .campaigns .card div .card-content {
 	/*padding: 3rem 0rem 0rem 3rem;*/
 	opacity: 0
+	transform:scale(0.8);
 } 
 
-div:hover > .card {
+.card:hover{
+
+}
+
+.hoverCard {
 	padding: 3rem 0rem 0rem 3rem;
 	/*background-image: linear-gradient(rgb(255,255,255,0.5),rgb(255,255,255,0.5) ), url('/images/camp1.png');*/
 	background-size: cover;
@@ -200,6 +204,7 @@ div:hover > .card {
     -webkit-transition-delay: .1s;
           transition-delay: .1s;
 }
+
 
 .campaigns h3{
 	font-weight: 600;
