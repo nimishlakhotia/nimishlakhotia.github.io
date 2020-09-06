@@ -112,6 +112,7 @@ footer a:hover{
     background-color: white;
     margin-bottom: 10rem;
     height: auto;
+    text-align: center;
 }
 
 #member1{
@@ -138,17 +139,15 @@ footer a:hover{
     color: black;
 }
 .member-data{
+    transform: translateY(-25%);
 }
-
-
 
 .team img{
     border-radius: 20rem;
-    height: 15rem;
+    height: 12rem;
     /*height: 10rem;*/
-    width: 15rem;
+    width: 12rem;
     /*width: auto;*/
-    transform: translateY(-50%);
 }
 
 /*.ia-container {
