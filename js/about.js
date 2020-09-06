@@ -10,6 +10,13 @@ jQuery(document).ready(function() {
     });
 });
 
+// $('#read-more').on('hidden.bs.collapse', function () {
+//       $('#read-more').text('Read More');
+//     });
+//     $('#read-more').on('shown.bs.collapse', function () {
+//       $('#read-more').text('Read less');
+// });
+
 $(function() {
     $("#footer").load("./footer.html");
     $("#nav").load("./nav.html");
