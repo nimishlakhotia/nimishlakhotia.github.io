@@ -3,19 +3,19 @@ console.clear()
 
 
 
-    $(document).ready(function() {
+    // $(document).ready(function() {
      
-      $(".owl-carousel").owlCarousel({
+    //   $(".owl-carousel").owlCarousel({
      
-          autoPlay: 3000, //Set AutoPlay to 3 seconds
+    //       autoPlay: 3000, //Set AutoPlay to 3 seconds
      
-          items : 2,
-          itemsDesktop : [1199,3],
-          itemsDesktopSmall : [979,3]
+    //       items : 2,
+    //       itemsDesktop : [1199,3],
+    //       itemsDesktopSmall : [979,3]
      
-      });
+    //   });
      
-    });
+    // });
 
 
 
