@@ -406,3 +406,67 @@ footer img{
 footer .social:hover{
 	color: yellow;
 }
+
+
+
+
+.modal-content{
+	background:linear-gradient(rgb(0,0,0,0.7),rgb(0,0,0,0.7)) ;
+	padding: 4rem 2rem 4rem;
+}
+
+
+.floating-label-group {
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.floating-label-group .floating-label{
+    font-size: 13px;
+    color: white;
+    position: absolute;
+    pointer-events: none;
+    top: 9px;
+    left: 12px;
+    transition: all 0.1s ease;
+}
+
+.floating-label-group input:focus ~ .floating-label,
+    input:not(:focus):valid ~ .floating-label{
+        
+        top: -15px;
+        bottom: 0px;
+        left: 0px;
+        font-size: 11px;
+        opacity: 1;
+        color: white;
+}
+
+.row {
+    margin-top: 50px;
+}
+
+
+input{
+    width: 50%;
+    background-color: transparent !important;
+    border:none !important;
+    border-bottom: .1rem solid white !important;
+    border-radius: 0 !important;
+    color: white !important;
+    box-shadow:none !important;
+}
+
+.submit{
+    background-color: var(--weblue);
+    color: white;
+    border:.1rem solid var(--weblue);
+    padding: .5rem 1.2rem .5rem;
+    border-radius: 1.2rem;
+}
+
+.submit:hover{
+    background-color: transparent;
+    border:.1rem solid white;
+}
