@@ -1,0 +1,240 @@
+
+.hidden{
+    visibility: hidden;
+    width: 0;
+    max-height: 0;
+    transition: max-height 2s ease-in;
+}
+.visible{
+    max-height: auto;
+    width: auto;
+    visibility: visible;
+    transition: max-height 2s ease-in;
+}
+.ongoingCampaigns{
+    background-color: #F7F5F5;
+    color: #253972;
+}
+.upcomingCampaigns{
+    background-color: #253972;
+    color: #F7F5F5;
+}
+.previousCampaigns{
+    background-color: #F7F5F5;
+    color: #253972;
+}
+.image{
+    float: right;
+}
+.c1 .card-body{
+    background-color:#253972;
+    color: #F7F5F5;
+    border-radius: 0.7rem;
+}.c1 .card-body .card-img-bottom{
+    width: 70%;
+    height: 70%;
+    float: right;
+}
+.c2 .card-body{
+    background-color:#e5e5e5;
+    color:#253972;
+    border-radius: 0.7rem;
+}.c2 .card-body .card-img-bottom{
+    width: 70%;
+    height: 70%;
+    float: right;
+}
+.c3 .card-body{
+    background-color:#F7F5F5;
+    color:#253972;
+    border-radius: 0.7rem;
+    border: 2px solid #253972;
+}
+.c3 .card-body .card-img-bottom{
+    width: 70%;
+    height: 70%;
+    float: right;
+}
+a{
+    text-decoration: none !important;
+}
+.card{
+    height: 100%;
+    border-radius: 0.7rem;
+}
+.card-title{
+    width: 50%;
+}
+.col-xl-3, .col-lg-4, .col-md-6{
+    align-items: center;
+    margin-bottom: 4%;
+    float: left;
+}
+.downicon{
+    padding-bottom: 3%;
+    text-align: center;
+}
+.ongoingCampaigns .downicon i{
+    color: #253972;
+}
+.upcomingCampaigns .downicon i{
+    color: #F7F5F5;
+}
+.previousCampaigns .downicon i{
+    color: #253972;
+}
+.modal-content{
+    background-color: #F7F8F8;
+    color: #253972;
+    border-radius: 2.065rem;
+}
+.modal{
+    background-color: rgba(0,0,0,0.9);
+}
+.modal-head{
+    margin-top: 2%;
+    display: inline;
+    margin-bottom: 1.5rem;
+}
+i{
+    padding: 1%;
+    border-radius: 3rem;
+    background-color: #C4C4C4;
+    margin: 0.4%;
+    color: #253972;
+}
+.ongoingCampaigns .fa-chevron-down{
+    padding: 0;
+    background-color: #F7F5F5;
+    color: #253972;
+}
+.upcomingCampaigns .fa-chevron-down{
+    padding: 0;
+    background-color: #253972;
+    color: #F7F5F5;
+}
+.previousCampaigns .fa-chevron-down{
+    padding: 0;
+    background-color: #F7F5F5;
+    color: #253972;
+}
+.ongoingCampaigns .fa-chevron-up{
+    padding: 0;
+    background-color: #F7F5F5;
+    color: #253972;
+}
+.upcomingCampaigns .fa-chevron-up{
+    padding: 0;
+    background-color: #253972;
+    color: #F7F5F5;
+}
+.previousCampaigns .fa-chevron-up{
+    padding: 0;
+    background-color: #F7F5F5;
+    color: #253972;
+}
+.modal-icons{
+    margin-bottom: 2%;
+}
+.modal-title{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+button.close{
+    border: none;
+    border-radius: 3rem;
+    background-color:#C4C4C4;
+    color: #253972;
+    padding: 0.4rem 0.6rem;
+    font-size:x-large;
+    font-weight: 800;
+    float: right;
+    opacity: 1;
+}
+.bottom-btn{
+    border: none;
+    border-radius: 3rem;
+    background-color: #C4C4C4;
+    color: #253972;
+    font-size: medium;
+    font-weight: bold;
+    padding: 0.3rem 0.9rem;
+    margin: 0.5rem;
+    float: right;
+}
+.modal-bottom-btns{
+    float: right;
+}
+.modal-icon:hover, .bottom-btn:hover{
+    background-color: #253972;
+    color: white;
+}
+.modal-body{
+    font-size: 25px;
+    padding: 15px;
+    margin-bottom: 10%;
+    font-weight: 550;
+}
+.footer{
+    margin-bottom: 1rem;
+}
+@media (min-width: 576px){
+    .modal-dialog{
+        max-width: 900px;
+    }
+    .container{
+        max-width: 1200px;
+    }
+}
+@media only screen and (max-width: 900px){
+    .container{
+        width: 90%;
+    }
+    .modal-body{
+        font-size: 19px;
+        padding: 15px;
+        margin-bottom: 10%;
+        font-weight: 550;
+    }
+}
+@media only screen and (max-width: 600px){
+    .container{
+        width: 80%;
+        align-items: center;
+    }
+    i{
+        padding: 3%;
+    }
+    .modal-bottom-btns{
+        float: none;
+    }
+    .footer{
+        display: grid;
+    }
+    .modal-icon{
+        padding: 3.8%;
+        margin: 2%;
+    }
+    .modal-icons{
+        margin-left: 12%;
+    }
+    .modal-img{
+        margin-left: 7.8%;
+    }
+}
+@media only screen and (max-width: 380px){
+    .container{
+        width: 100%;
+    }
+    .modal-img{
+        margin-left: 11.8%;
+    }
+}
+@media only screen and (max-width: 330px){
+    .container{
+        width: 100%;
+    }
+    .modal-img{
+        margin-left: 3.8%;
+    }
+}

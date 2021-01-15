@@ -1,0 +1,222 @@
+.hidden{
+    visibility: hidden;
+    width: 0;
+    max-height: 0;
+    height: 0;
+    opacity: 0;
+    transition: max-height 1s ease-in, opacity 1s linear 0.3s;
+}
+.card:hover .hidden{
+    transition: max-height 0.5s ease-out, opacity 1s linear 0.3s;
+    max-height: 100px;
+    visibility: visible;
+    width: auto;
+    height: auto;
+    opacity: 1;
+}
+
+.bg-1{
+    background-color:  rgba(247, 248, 248, 0.9);
+    color: #253972;
+}
+.bg-2{
+    background-color: #253972;
+    color: #E5E5E5;
+}
+.bg-3{
+    background-color: #E5E5E5;
+    color: #253972;
+}
+
+.aboutus{
+    padding-top: 3rem;
+    padding-bottom: 7rem;
+}
+.values{
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+}
+.team{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.heading-largest{
+    font-size: 6rem;
+    font-weight: 600;
+}
+.mission-img{
+    height: 100%;
+    width: 120%;
+}
+.aboutus-content{
+    width: 70%;
+    font-size: xx-large;
+}
+.card{
+    height: 100%;
+    border-radius: 0.7rem;
+}
+
+.card-img, .card-img-bottom, .card-img-top {
+    width: 100%;
+    margin-top: 4rem;
+}
+.image{
+    float: right;
+}
+.team-card{
+    height: 21rem;
+    text-align: center;
+    transition: 2s all ease-in-out;
+    background-color: #253972;
+}
+.team-card-title{
+    position: absolute;
+    bottom: 1rem;
+    width: 90%;
+}
+.modal-icon{
+    background-color: #C4C4C4;
+    padding: 0.4rem 0.5rem;
+    color: #253972;
+    margin: 0.2rem;
+    border-style: none;
+}
+.modal-icon:hover{
+    color: white;
+    background-color:rgba(0,0,0,0.8);
+    opacity: 0.9;
+}
+a{
+    text-decoration: none;
+}
+.modal-content{
+    color: #F7F8F8;
+    background-color: #253972;
+    border-radius: 2.065rem;
+}
+.modal{
+    background-color: rgba(247, 248, 248, 0.8)
+}
+.modal-head{
+    margin-top: 2%;
+    display: inline;
+    margin-bottom: 1.5rem;
+}
+.round{
+    border-radius: 3rem;
+}
+.modal-icons{
+    margin-bottom: 2%;
+}
+.modal-title{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.close{
+    border: none;
+    border-radius: 3rem;
+    background-color: #C4C4C4;
+    color: #253972;
+    padding: 0rem 0.6rem;
+    font-size:x-large;
+    font-weight: 800;
+    float: right;
+}
+.close:hover{
+    background-color:rgba(0,0,0,0.8);
+    color: white;
+}
+.bottom-btn{
+    border: none;
+    border-radius: 3rem;
+    background-color: #C4C4C4;
+    color: #253972;
+    font-size: medium;
+    font-weight: bold;
+    padding: 0.3rem 0.9rem;
+    margin: 0.5rem;
+    float: right;
+}
+.modal-bottom-btns{
+    float: right;
+}
+.modal-body{
+    font-size: 25px;
+    padding: 15px;
+    margin-bottom: 10%;
+    font-weight: 550;
+}
+.footer{
+    margin-bottom: 1rem;
+}
+@media (min-width: 576px){
+    .modal-dialog{
+        max-width: 900px;
+    }
+    
+}
+@media only screen and (max-width: 900px){
+    .container{
+        width: 90%;
+    }
+    .modal-body{
+        font-size: 19px;
+        padding: 15px;
+        margin-bottom: 10%;
+        font-weight: 550;
+    }
+    .heading-largest{
+        font-size: 3rem;
+        font-weight: 600;
+    }
+    .mission-img{
+        height: 70%;
+        width: 90%;
+    }
+    .aboutus-content{
+        width: 70%;
+        font-size: large;
+    }
+}
+@media only screen and (max-width: 600px){
+    .container{
+        width: 80%;
+        align-items: center;
+    }
+    i{
+        padding: 3%;
+    }
+    .modal-bottom-btns{
+        float: none;
+    }
+    .footer{
+        display: grid;
+    }
+    .modal-icon{
+        padding: 3.8%;
+        margin: 2%;
+    }
+    .modal-icons{
+        margin-left: 12%;
+    }
+    .modal-img{
+        margin-left: 7.8%;
+    }
+}
+@media only screen and (max-width: 380px){
+    .container{
+        width: 100%;
+    }
+    .modal-img{
+        margin-left: 11.8%;
+    }
+}
+@media only screen and (max-width: 330px){
+    .container{
+        width: 100%;
+    }
+    .modal-img{
+        margin-left: 3.8%;
+    }
+}

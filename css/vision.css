@@ -1,0 +1,36 @@
+.vision{
+    margin-top: 4rem;
+    background-image: url("../images/Vector.jpg");
+    color: #253972;
+}
+.vision-heading{
+    font-size: 6rem;
+    font-weight: 800;
+    margin:7rem 0rem;
+}
+.vision-img{
+    width: 500px;
+    height:450px;
+    margin-top: 12%;
+    border-radius: 3rem;
+}
+.vision-text{
+    font-size: 2rem;
+    width: 74%;
+    line-height: 50px;
+    margin-bottom: 13rem;
+}
+.vision-btn{
+    float: right;
+    background-color: #253972;
+    color: white;
+    border-radius: 3rem;
+    padding: 0.1rem 2rem;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    font-size: x-large;
+}
+.vision-btn:hover{
+    background: linear-gradient(#253972,black);
+    color: whitesmoke;
+}
