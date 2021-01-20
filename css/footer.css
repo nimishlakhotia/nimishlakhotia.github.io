@@ -1,0 +1,31 @@
+.footer{
+    background-color: #253972;
+    text-align: center;
+}
+a{
+    color: white;
+    text-decoration: underline !important;
+}
+a:hover{
+    color: #c5c5c5;
+}
+.f-item{
+    margin: 2rem;
+}
+.f-items{
+    padding: 2.5rem 0rem;
+}
+.connect-with-us{
+    color: white;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+.f-icon{
+    border-radius: 3rem;
+    width: 2.5%;
+    height: 2.5%;
+    margin: 2rem;
+}
+.f-icons{
+    padding-bottom: 1rem;
+}

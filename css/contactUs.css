@@ -1,0 +1,100 @@
+.main-section{
+    margin-top: 2rem;
+    color: #253972;
+}
+.main-heading{
+   font-size: 4rem;
+   font-weight: 700; 
+}
+.b-text{
+    font-size: xx-large;
+}
+/* form */
+form{
+    margin-top: 3rem;
+}
+
+/* Input placeholder colors */
+input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #253972;
+    opacity: 1; /* Firefox */
+}
+
+input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #253972;
+}
+
+input::-ms-input-placeholder { /* Microsoft Edge */
+    color: #253972;
+}
+
+/* input borders */
+
+input{
+    border: none;
+    border-bottom: 2px solid #253972;
+    line-height: 230% !important;
+    width: 100%;
+    margin-bottom: 2rem !important;
+}
+input:focus, textarea:focus, select:focus{
+    outline: none;
+    border-bottom: 2px solid skyblue;
+}
+/* Submit / Let us know Button */
+.submit{
+    background-color: #253972;
+    color: white;
+    border-radius: 3rem;
+    padding: 0.2rem 1rem;
+    border: none;
+    float: right;
+}
+/* Rectangle 1  */
+.rect-1{
+    margin-top: 4rem;
+    background-color: #C4C4C4;
+    height: 8rem;
+    width: 100%;
+    border-radius: 1.5rem;
+}
+/* hr tag styling */
+hr{
+    margin-top: 2.4rem !important; 
+    border: none !important; 
+    height: 1.8px !important; 
+    background: #c3c3c3; 
+    margin-bottom: 50px !important; 
+    width: 100% !important;
+}
+/* Address Section */
+.heading-address, .heading-contact{
+    text-align: center;
+    font-size: xxx-large;
+    color: #253972;
+}
+.content-address{
+    text-align: center;
+    line-height: 50%;
+    font-size: xx-large;
+}
+/* Rectangle 2 styling */
+.rect-2{
+    background-color: #C4C4C4;
+    height: 100%;
+    width: 100%;
+    border-radius: 1.5rem;
+}
+/* Contact - channel section */
+.contact-img{
+    width: 9%;
+    height: 9%;
+    margin: 0.5rem 1.8rem;
+}
+.content-contact{
+    line-height: 50%;
+    font-size: xx-large;
+}
+.contact-channel-section{
+    margin-bottom: 3rem;
+}
